@@ -1,6 +1,6 @@
 const API_KEY = process.env.API_KEY
 
-const requests = {
+const requests: { [key: string]: { title: string; url: string } } = {
   fetchTrending: {
     title: "Trending",
     url: `/trending/all/week?api_key=${API_KEY}`,
